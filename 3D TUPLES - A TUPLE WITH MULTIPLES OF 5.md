@@ -22,8 +22,19 @@ To write a Python program to create a tuple containing all multiples of 5 up to 
 ### PROGRAM
 
 ```
+reg.no: 212222060143
+name: Mariam Sherin
+a=int(input())
+b=[]
+for i in range(1,a):
+    if i%5==0:
+        b.append(i)
+print(tuple(b))
+        
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/b01ba55d-5f74-4234-be39-e9843a98b74d)
 
 ### RESULT
+Thus, The Python program to create a tuple containing all multiples of 5 up to a given number **N** was implemented and executed successfully.
