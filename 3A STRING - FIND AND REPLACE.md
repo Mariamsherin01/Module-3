@@ -1,30 +1,45 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - Capitalizing Every Other Letter in a String
 
 ---
 
 ### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+To write a Python function that reads a string and returns a new string with every other letter capitalized, starting from the second letter (index 1).
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
+1.Define a function convert that accepts a string as input.
 
+2.Initialize an empty result string.
+
+3.Loop through each character using its index in the input string.
+
+4.If the index is even, add the lowercase character to the result.
+
+5.If the index is odd, add the uppercase character to the result.
+
+6.Print the resulting string after the loop.
 ---
 
 ### PROGRAM
 
 ```
+reg.no: 212222060143
+name: Mariam Sherin
+def convert(input_str):
+    output_str = ""
+    for i, char in enumerate(input_str):
+        if i % 2 == 0:
+            output_str += char.lower()
+        else:
+            output_str += char.upper()
+    print(output_str)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/1f2da933-7943-445a-989e-de98c6910dd3)
 
 ### RESULT
+Thus, The Python function that reads a string and returns a new string with every other letter capitalized, starting from the second letter was implement and executed successfully.
